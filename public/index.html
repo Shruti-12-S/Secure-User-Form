@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Secure User Form | Cyber Shield</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Background Glow -->
+  <div class="background-glow"></div>
+
+  <!-- Main Container -->
+  <div class="container">
+
+    <!-- Header -->
+    <div class="header">
+
+      <div class="badge">
+        🔒 Secure Web Application
+      </div>
+
+      <h1>Secure User Input Form</h1>
+
+      <p>
+        SQL Injection & XSS Protected User Submission System
+      </p>
+
+    </div>
+
+    <!-- Form -->
+    <form id="userForm">
+
+      <!-- Username -->
+      <div class="input-group">
+
+        <label for="username">
+          Username
+        </label>
+
+        <input
+          type="text"
+          id="username"
+          placeholder="Enter your username"
+          required
+        />
+
+      </div>
+
+      <!-- Comment -->
+      <div class="input-group">
+
+        <label for="comment">
+          Comment
+        </label>
+
+        <textarea
+          id="comment"
+          placeholder="Write your secure comment..."
+          required
+        ></textarea>
+
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit">
+        Submit Securely
+      </button>
+
+    </form>
+
+    <!-- Message -->
+    <div id="message"></div>
+
+    <!-- Security Features -->
+    <div class="security-info">
+
+      <div class="security-card">
+        <span>🛡</span>
+        <p>SQL Injection Protected</p>
+      </div>
+
+      <div class="security-card">
+        <span>⚡</span>
+        <p>XSS Sanitization Enabled</p>
+      </div>
+
+      <div class="security-card">
+        <span>🔐</span>
+        <p>Secure Backend Validation</p>
+      </div>
+
+    </div>
+
+    <!-- User Comments Section -->
+    <div class="users-section">
+
+      <div class="section-title">
+
+        <h2>User Comments</h2>
+
+        <span>Live Secure Data</span>
+
+      </div>
+
+      <!-- Comments Wrapper Card -->
+      <div class="comments-wrapper">
+
+        <!-- Dynamic Comments -->
+        <div id="users"></div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
